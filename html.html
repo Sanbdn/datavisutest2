@@ -7,11 +7,11 @@
 </head>
 <body>
     <h1>Exercice2</h1>
-    <h2>Visualisation rappeurs français, genre artistique : rap politique et leurs labels</h2>
+    <h2>Classement par date de naissance des rappeurs français positionnés en tant que rappeurs engagés</h2>
     <p>Code de la requête en SPARQL wikidata</p>
     <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20%3Frapper%20%3FrapperLabel%20%3Fdate_of_birth%20%3Frecord_label%20%3Frecord_labelLabel%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3Frapper%20wdt%3AP106%20wd%3AQ2252262.%0A%20%20%3Frapper%20wdt%3AP27%20wd%3AQ142.%0A%20%20%0A%20%20%3Frapper%20wdt%3AP136%20wd%3AQ969663.%0A%20%20OPTIONAL%20%7B%20%3Frapper%20wdt%3AP569%20%3Fdate_of_birth.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Frapper%20wdt%3AP264%20%3Frecord_label.%20%7D%0A%7D%0ALIMIT%20100" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
-    <h2>Visualisation</h2>
-    <h2>Graphique 1</h2>
+    <h2>Visualisation via des graphiques</h2>
+    <h2>Dans quels labels de musique sont engagés ces rappeurs</h2>
     <img src="graphique1.svg">
     <h2>Les maisons de disque des rappeurs classés dans le genre rap politique</h2>
     <img src="graphique2.svg">
